@@ -1,0 +1,23 @@
+What's a RubyGem and why would you use one?
+  RubyGems are packaged bodies of Ruby code. There is an infastructure which facilitates the publishing of Gems globally so that one can use any existing Gems. 
+
+What's the difference between lazy and eager loading?
+  Eager loading loads upon instiantion, lazy loading loads when called for the first time.
+
+What's the difference between the CREATE TABLE and INSERT INTO SQL statements?
+  CREATE TABLE creates a new SQL table, INSERT INTO inserts a new row into an existing table.
+
+What's the difference between extend and include? When would you use one or the other?
+  Extend adds the given module to the class where as include adds the module to an instance of that class. Extend is to be used when the methods of the extended module should be added to the class itself rather than any given instance of that class.
+
+In persistence.rb, why do the save methods need to be instance (vs. class) methods?
+  The save method will be called as self by instance not a class.
+  
+Given the Jar-Jar Binks example earlier, what is the final SQL query in persistence.rb's save! method?
+  UPDATE character
+  SET character_name = "Jar-Jar Binks",
+  star_rating = 1
+  WHERE id = #{whatever self.id evaluates as};
+
+AddressBook's entries instance variable no longer returns anything. We'll fix this in a later checkpoint. What changes will we need to make?
+  Not sure I understand this, I'm going to press on with the next checkpoint but we can go over this on monday.
